@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "421112969237",
+    "project_id": "brew-crew-e60f7",
+    "storage_bucket": "brew-crew-e60f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421112969237:android:0d6f88762497e91fd2361c",
+        "android_client_info": {
+          "package_name": "br.com.siomara.brew_crew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "421112969237-d67fq83sft4c591170s5po0mpsbt0k14.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6v8OT_qRzAzaQvUStAqNyQ3SQQPSxmzo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "421112969237-d67fq83sft4c591170s5po0mpsbt0k14.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

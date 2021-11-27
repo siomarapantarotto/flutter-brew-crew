@@ -34,14 +34,8 @@ The app covers the following contents:
 
 
 ## App screenshots
-<!-->
-<kbd><img src="https://user-images.githubusercontent.com/5893219/141685940-14381413-137b-4761-b33a-e7f8e9ad41ae.png" width="150" height="300"></kbd>
-<kbd><img src="https://user-images.githubusercontent.com/5893219/141685941-529f58af-b6f8-40eb-899e-75b9db3c0a8c.png" width="150" height="300"></kbd>
-<kbd><img src="https://user-images.githubusercontent.com/5893219/141685932-522177c2-97e2-41ec-a511-b20b11f35a3e.png" width="150" height="300"></kbd>
-<kbd><img src="https://user-images.githubusercontent.com/5893219/141685935-43e3d992-d5bb-42b5-984a-a56fdb8e39d8.png" width="150" height="300"></kbd>
-<kbd><img src="https://user-images.githubusercontent.com/5893219/141685937-31d93ccc-f3c6-4ee1-9b0d-1c5943168e70.png" width="150" height="300"></kbd>
-<kbd><img src="https://user-images.githubusercontent.com/5893219/141685938-40fcee8c-7695-4a4e-962c-06ca786aab7f.png" width="150" height="300"></kbd>
--->
+<kbd><img src="https://user-images.githubusercontent.com/5893219/143664944-c8812939-94eb-4f9e-9d6a-92a38192ff9e.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/143664945-d851dfae-8a4c-4685-beb2-571435a13217.png" width="150" height="300"></kbd>
 
 
 ## References

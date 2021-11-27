@@ -23,6 +23,25 @@ The app covers the following contents:
 - Streams
 - Provider Package
 - Signing Out
+- Sign In & Register Forms
+- Toggle Between Forms
+- Register With Email & Password
+- Sign in With Email & Password
+- Text Input Decoration
+- Loading Widget
+- Firestore Database Setup
+- Firestore User Records
+- Firestore Streams
+- Brew Model
+- Listing Brew Data
+- Bottom Sheets
+- Drop-downs
+- Sliders
+- User Data Model
+- Using a Stream Builder
+- Updating User Data
+- Finishing Touches
+- Testing & Wrap Up
 
 
 ## Technologies

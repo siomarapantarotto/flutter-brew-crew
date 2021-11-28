@@ -1,6 +1,5 @@
 import 'package:brew_crew/models/app_user.dart';
 import 'package:brew_crew/services/auth.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 
@@ -26,7 +25,7 @@ class MyApp extends StatelessWidget {
       catchError: (User, AppUser) => null,
       initialData:null,
       value: AuthService().streamUser,
-      child: MaterialApp(
+      child: const MaterialApp(
         home: Wrapper(),
         ),
     );

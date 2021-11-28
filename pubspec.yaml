@@ -44,6 +44,9 @@ dependencies:
   # The following adds a wrapper around InheritedWidget to make them easier to use and more reusable.
   provider: ^6.0.1
 
+  # The following adds an animated loading indicator. 
+  flutter_spinkit: ^5.1.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

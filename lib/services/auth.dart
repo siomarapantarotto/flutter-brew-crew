@@ -1,8 +1,10 @@
+import 'package:flutter/material.dart';
 import 'package:brew_crew/models/app_user.dart';
+import 'package:brew_crew/services/database.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class AuthService {
-
+  
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
 
   // create app user object based on Firebase User.
@@ -13,8 +15,8 @@ class AuthService {
   // Auth change user stream.
   Stream<AppUser?> get streamUser {
     return _firebaseAuth
-    .authStateChanges()
-    .map((User? user) => _userFromFirebase(user!));
+        .authStateChanges()
+        .map((User? user) => _userFromFirebase(user!));
   }
 
   // Sign in anonymously.
@@ -24,7 +26,7 @@ class AuthService {
       User? user = userCredential.user;
       return _userFromFirebase(user!);
     } catch (e) {
-      print(e.toString());
+      debugPrint('Inside auth.dart - error: ' + e.toString());
       return null;
     }
   }
@@ -32,11 +34,12 @@ class AuthService {
   // Sign in with email & password.
   Future signInWithEmailAndPassword(String email, String password) async {
     try {
-      UserCredential userCredential = await _firebaseAuth.signInWithEmailAndPassword(email: email, password: password);
+      UserCredential userCredential = await _firebaseAuth
+          .signInWithEmailAndPassword(email: email, password: password);
       User? user = userCredential.user;
       return _userFromFirebase(user!);
     } catch (e) {
-      print(e.toString());
+      debugPrint('Inside auth.dart - error: ' + e.toString());
       return null;
     }
   }
@@ -44,11 +47,16 @@ class AuthService {
   // Register with email & password.
   Future registerWithEmailAndPassword(String email, String password) async {
     try {
-      UserCredential userCredential = await _firebaseAuth.createUserWithEmailAndPassword(email: email, password: password);
+      UserCredential userCredential = await _firebaseAuth
+          .createUserWithEmailAndPassword(email: email, password: password);
       User? user = userCredential.user;
-      return _userFromFirebase(user!);
+
+      // create a new document for the user with the uid
+      await DatabaseService(uid: user!.uid).updateUserData('new crew member', '0', 100);
+      debugPrint('Inside auth.dart - user.uid: ' + user.uid);
+      return _userFromFirebase(user);
     } catch (e) {
-      print(e.toString());
+      debugPrint('Inside auth.dart - error: ' + e.toString());
       return null;
     }
   }
@@ -58,9 +66,9 @@ class AuthService {
     try {
       return await _firebaseAuth.signOut();
     } catch (e) {
-      print(e.toString());
+      debugPrint('Inside auth.dart - error: ' + e.toString());
       return null;
-    }    
+    }
   }
 
 }

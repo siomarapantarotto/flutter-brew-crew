@@ -33,9 +33,10 @@ class _RegisterState extends State<Register> {
             appBar: AppBar(
               backgroundColor: Colors.brown[400],
               elevation: 0.0,
-              title: Text('Register to Brew Crew'),
+              title: const Text('Register to Brew Crew'),
               actions: <Widget>[
-                FlatButton.icon(
+                //FlatButton.icon(
+                TextButton.icon(
                     icon: const Icon(Icons.person),
                     label: const Text('Sign In'),
                     onPressed: () => widget.toggleView(),
@@ -67,8 +68,9 @@ class _RegisterState extends State<Register> {
                       },
                     ),
                     const SizedBox(height: 20.0),
-                    RaisedButton(
-                      color: Colors.pink[400],
+                    //RaisedButton(
+                    ElevatedButton(
+                      //color: Colors.pink[400],
                       child: const Text(
                         'Register',
                         style: TextStyle(color: Colors.white)

@@ -14,10 +14,11 @@ class _BrewListState extends State<BrewList> {
   Widget build(BuildContext context) {
     final brews = Provider.of<List<Brew?>?>(context);
     if (brews != null) {
-      brews.forEach((brew) {
-        debugPrint(brew!.name);
-        debugPrint(brew.sugars);
-      });
+      for (var brew in brews) {
+        debugPrint('name: ' + brew!.name +
+            ' / sugars: ' +   brew.sugars +
+            ' / strength: ' + brew.strength.toString());
+      }
     }
 
     return Container();

@@ -7,9 +7,11 @@ class AuthService {
   
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
 
-  // create app user object based on Firebase User.
+  // Create app user object based on Firebase User.
   AppUser? _userFromFirebase(User user) {
-    return user != null ? AppUser(uid: user.uid) : null;
+    // The operand can't be null, so the condition is always true.
+    //return user != null ? AppUser(uid: user.uid) : null;
+    return AppUser(uid: user.uid);
   }
 
   // Auth change user stream.

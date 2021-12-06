@@ -35,8 +35,9 @@ class _SignInState extends State<SignIn> {
               elevation: 0.0,
               title: const Text('Sign in to Brew Crew'),
               actions: <Widget>[
-                FlatButton.icon(
-                    icon: Icon(Icons.person),
+                //FlatButton.icon(
+                TextButton.icon(                                                      
+                    icon: const Icon(Icons.person),
                     label: const Text('Register'),
                     //onPressed: () {
                     //  widget.toggleView();
@@ -74,9 +75,10 @@ class _SignInState extends State<SignIn> {
                         setState(() => password = val);
                       },
                     ),
-                    SizedBox(height: 20.0),
-                    RaisedButton(
-                      color: Colors.pink[400],
+                    const SizedBox(height: 20.0),
+                    //RaisedButton(
+                    ElevatedButton(
+                      //color: Colors.pink[400],
                       child: const Text(
                         'Sign in',
                         style: TextStyle(color: Colors.white),
@@ -98,7 +100,7 @@ class _SignInState extends State<SignIn> {
                         }
                       }
                     ),
-                    SizedBox(height: 12.0),
+                    const SizedBox(height: 12.0),
                     Text(
                       error,
                       style: const TextStyle(color: Colors.red, fontSize: 14.0),

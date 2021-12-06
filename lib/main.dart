@@ -1,9 +1,8 @@
+import 'package:flutter/material.dart';
 import 'package:brew_crew/models/app_user.dart';
 import 'package:brew_crew/services/auth.dart';
-import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart';
-
 import 'package:brew_crew/screens/wrapper.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:provider/provider.dart';
 
 void main() async {
@@ -22,7 +21,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return StreamProvider<AppUser?>.value(
-      catchError: (User, AppUser) => null,
+      //catchError: (User, AppUser) => null,
       initialData:null,
       value: AuthService().streamUser,
       child: const MaterialApp(

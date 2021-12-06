@@ -22,7 +22,8 @@ class Home extends StatelessWidget {
           title: const Text('Brew Crew'),
           elevation: 0.0,
           actions: <Widget>[
-            FlatButton.icon(
+            //FlatButton.icon(
+            TextButton.icon(
               icon: const Icon(Icons.person),
               label: const Text('Logout'),
               onPressed: () async {

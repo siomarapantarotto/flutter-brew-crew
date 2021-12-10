@@ -53,8 +53,13 @@ The app covers the following contents:
 
 
 ## App screenshots
-<kbd><img src="https://user-images.githubusercontent.com/5893219/143664944-c8812939-94eb-4f9e-9d6a-92a38192ff9e.png" width="150" height="300"></kbd>
-<kbd><img src="https://user-images.githubusercontent.com/5893219/143664945-d851dfae-8a4c-4685-beb2-571435a13217.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/145521913-32704122-f8c7-4abd-889f-7d43747a92dd.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/145521916-8308c08b-f774-4486-9f29-826674eb1247.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/145521918-b07a145c-e720-42d1-bdda-1e0747e3f0a4.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/145521900-f28ae3bb-b143-44fe-9fe8-69c6363be77d.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/145521907-497d3883-4ee8-40d4-b62e-c107c85cf795.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/145521911-8d8daa74-f85b-4066-aa51-15af23f51676.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/145521912-9c4f0459-7c61-48aa-93d4-25ad5e8e4f8c.png" width="150" height="300"></kbd>
 
 
 ## References

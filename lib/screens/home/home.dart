@@ -12,9 +12,9 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return StreamProvider<List<Brew?>?>.value(
+    return StreamProvider<List<Brew>>.value(
       value: DatabaseService(uid: '').brews,
-      initialData: null,
+      initialData: List.empty(),
       child: Scaffold(
         backgroundColor: Colors.brown[50],
         appBar: AppBar(

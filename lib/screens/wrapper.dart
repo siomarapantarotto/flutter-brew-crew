@@ -9,6 +9,7 @@ class Wrapper extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     final user = Provider.of<AppUser?>(context);
     //final AppUser? user = Provider.of<AppUser?>(context);
     debugPrint('Inside wrapper.dart - user: ' + user.toString());

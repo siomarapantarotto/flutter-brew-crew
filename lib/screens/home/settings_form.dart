@@ -65,6 +65,12 @@ class _SettingsFormState extends State<SettingsForm> {
                     }).toList(),
                     onChanged: (val) =>
                         setState(() => _currentSugars = val.toString()),
+                    onTap: () {
+                      FocusScopeNode currentFocus = FocusScope.of(context);
+                      if (!currentFocus.hasPrimaryFocus) {
+                        currentFocus.unfocus();
+                      }
+                    },
                   ),
 
                   // Strength Slider
@@ -94,10 +100,9 @@ class _SettingsFormState extends State<SettingsForm> {
                         debugPrint(_currentStrength.toString());
                         if (_formKey.currentState!.validate()) {
                           await DatabaseService(uid: user.uid).updateUserData(
-                            _currentName ?? userData.name,
-                            _currentSugars ?? userData.sugars,
-                            _currentStrength ?? userData.strength
-                          );
+                              _currentName ?? userData.name,
+                              _currentSugars ?? userData.sugars,
+                              _currentStrength ?? userData.strength);
                           Navigator.pop(context);
                         }
                       }),

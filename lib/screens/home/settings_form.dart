@@ -89,11 +89,25 @@ class _SettingsFormState extends State<SettingsForm> {
                   ),
 
                   // Update ElevatedButton
+                  const SizedBox(height: 10.0),
                   ElevatedButton(
-                      child: const Text(
-                        'Update',
-                        style: TextStyle(color: Colors.white),
+                      child: const Text('Update'),
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.blue,
+                        onPrimary: Colors.white,
+                        shadowColor: Colors.blue,
+                        textStyle: const TextStyle(fontSize: 17),
+                        elevation: 3,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(32.0)),
+                        minimumSize: const Size(150, 40),
                       ),
+
+                      //child: const Text(
+                      //  'Update',
+                      //  style: TextStyle(color: Colors.white),
+                      //),
+
                       onPressed: () async {
                         debugPrint(_currentName);
                         debugPrint(_currentSugars);

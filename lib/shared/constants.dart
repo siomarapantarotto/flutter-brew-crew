@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+const appName = "Coffee Fan Club";
+
 const textInputDecoration = InputDecoration(
   fillColor: Colors.white,
   filled: true,
@@ -8,3 +10,7 @@ const textInputDecoration = InputDecoration(
   focusedBorder: OutlineInputBorder(
       borderSide: BorderSide(color: Colors.blue, width: 2.0)),
 );
+
+
+
+

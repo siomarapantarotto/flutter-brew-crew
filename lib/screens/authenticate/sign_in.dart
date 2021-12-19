@@ -14,96 +14,98 @@ class SignIn extends StatefulWidget {
 }
 
 class _SignInState extends State<SignIn> {
-
   final AuthService _authService = AuthService();
   final _formKey = GlobalKey<FormState>();
   String error = '';
   bool loading = false;
 
-  // Text field state
+  // Text fields state
   String email = '';
   String password = '';
-  
+
   @override
   Widget build(BuildContext context) {
     return loading
         ? Loading()
         : Scaffold(
-            backgroundColor: Colors.brown[100],
+            //backgroundColor: Colors.brown[100],
             appBar: AppBar(
-              backgroundColor: Colors.brown[400],
+              backgroundColor: Colors.brown[900],
               elevation: 0.0,
-              title: const Text('Sign in to Brew Crew'),
+              title: const Text('Sign in to $appName'),
               actions: <Widget>[
-                //FlatButton.icon(
-                TextButton.icon(                                                      
-                    icon: const Icon(Icons.person),
-                    label: const Text('Register'),
-                    //onPressed: () {
-                    //  widget.toggleView();
-                    //}
-                    onPressed: () => widget.toggleView(),
+                TextButton.icon(
+                  icon: const Icon(Icons.person),
+                  label: const Text('Register'),
+                  onPressed: () => widget.toggleView(),
                 ),
               ],
             ),
             body: Container(
               padding:
-                  const EdgeInsets.symmetric(vertical: 20.0, horizontal: 50.0),
+                  const EdgeInsets.symmetric(vertical: 10.0, horizontal: 50.0),
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage('assets/coffee_bg.png'),
+                    fit: BoxFit.cover),
+              ),
               child: Form(
                 key: _formKey,
                 child: Column(
                   children: <Widget>[
-                    const SizedBox(height: 20.0),
+                    const SizedBox(height: 25.0),
                     TextFormField(
-                        decoration:
-                            textInputDecoration.copyWith(hintText: 'Email'),
-                        validator: (val) =>
-                            val!.isEmpty ? 'Enter an email' : null,
-                        onChanged: (val) {
-                          setState(() => email = val);
-                        },
+                      decoration:
+                          textInputDecoration.copyWith(hintText: 'Email'),
+                      validator: (val) => val!.isEmpty ? 'Enter an email.' : null,
+                      onChanged: (val) { setState(() => email = val); },
                     ),
-                    const SizedBox(height: 20.0),
+                    const SizedBox(height: 25.0),
                     TextFormField(
                       decoration:
                           textInputDecoration.copyWith(hintText: 'Password'),
                       obscureText: true,
-                      validator: (val) => val!.length < 6
-                          ? 'Enter a password 6+ chars long'
-                          : null,
-                      onChanged: (val) {
-                        setState(() => password = val);
-                      },
+                      validator: (val) => val!.length < 6 ? 'Enter a password 6+ chars long.' : null,
+                      onChanged: (val) { setState(() => password = val); },
                     ),
-                    const SizedBox(height: 20.0),
-                    //RaisedButton(
+                    const SizedBox(height: 25.0),
                     ElevatedButton(
-                      //color: Colors.pink[400],
-                      child: const Text(
-                        'Sign in',
-                        style: TextStyle(color: Colors.white),
-                      ),
-                      onPressed: () async {
-                        if (_formKey.currentState!.validate()) {
-                          // Sign in to Firebase
-                          //print(email);
-                          //print(password);
-                          setState(() => loading = true);
-                          dynamic result = await _authService
-                              .signInWithEmailAndPassword(email, password);
-                          if (result == null) {
-                            setState(() {
-                              loading = false;
-                              error = 'could not sign in with those credentials';                              
-                            });
+                        child: const Text('Sign in'),
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.blue,
+                          onPrimary: Colors.white,
+                          shadowColor: Colors.blue,
+                          textStyle: const TextStyle(fontSize: 17),
+                          elevation: 3,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(32.0)),
+                          minimumSize: const Size(150, 40),
+                        ),
+                        onPressed: () async {
+                          if (_formKey.currentState!.validate()) {
+                            // Sign in to Firebase
+                            debugPrint('Inside sign_in.dart - email: ' + email);
+                            debugPrint(
+                                'Inside sign_in.dart - password: ' + password);
+                            setState(() => loading = true);
+                            dynamic result = await _authService
+                                .signInWithEmailAndPassword(email, password);
+                            if (result == null) {
+                              setState(() {
+                                loading = false;
+                                error =
+                                    'Could not sign in with those credentials.';
+                              });
+                            }
                           }
-                        }
-                      }
-                    ),
-                    const SizedBox(height: 12.0),
+                        }),
+                    const SizedBox(height: 25.0),
                     Text(
                       error,
-                      style: const TextStyle(color: Colors.red, fontSize: 14.0),
+                      style: const TextStyle(
+                          color: Colors.red,
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.bold),
                     ),
                   ],
                 ),

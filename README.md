@@ -36,6 +36,7 @@ The app covers the following contents:
 ## App screenshots
 <kbd><img src="https://user-images.githubusercontent.com/5893219/143664944-c8812939-94eb-4f9e-9d6a-92a38192ff9e.png" width="150" height="300"></kbd>
 <kbd><img src="https://user-images.githubusercontent.com/5893219/143664945-d851dfae-8a4c-4685-beb2-571435a13217.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/146693492-bfc6f588-29e9-4c8c-86b1-b8b5e4524da7.png" width="300" height="300"></kbd>
 
 
 ## References

@@ -40,8 +40,7 @@ The app covers the following contents:
 - User Data Model
 - Using a Stream Builder
 - Updating User Data
-- Finishing Touches
-- Testing & Wrap Up
+- Design Final Touches
 
 
 ## Technologies
@@ -53,13 +52,24 @@ The app covers the following contents:
 
 
 ## App screenshots
-<kbd><img src="https://user-images.githubusercontent.com/5893219/145521913-32704122-f8c7-4abd-889f-7d43747a92dd.png" width="150" height="300"></kbd>
-<kbd><img src="https://user-images.githubusercontent.com/5893219/145521916-8308c08b-f774-4486-9f29-826674eb1247.png" width="150" height="300"></kbd>
-<kbd><img src="https://user-images.githubusercontent.com/5893219/145521918-b07a145c-e720-42d1-bdda-1e0747e3f0a4.png" width="150" height="300"></kbd>
-<kbd><img src="https://user-images.githubusercontent.com/5893219/145521900-f28ae3bb-b143-44fe-9fe8-69c6363be77d.png" width="150" height="300"></kbd>
-<kbd><img src="https://user-images.githubusercontent.com/5893219/145521907-497d3883-4ee8-40d4-b62e-c107c85cf795.png" width="150" height="300"></kbd>
-<kbd><img src="https://user-images.githubusercontent.com/5893219/145521911-8d8daa74-f85b-4066-aa51-15af23f51676.png" width="150" height="300"></kbd>
-<kbd><img src="https://user-images.githubusercontent.com/5893219/145521912-9c4f0459-7c61-48aa-93d4-25ad5e8e4f8c.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/146691028-91c6a540-3d3f-4b64-a894-97567439f866.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/146691029-8f7db5a1-5826-408e-879c-36230ff0f48b.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/146691031-eb3bb7e2-c7be-4274-85ed-58d7dee8f296.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/146691033-08a81237-6393-4efa-86af-277795644aac.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/146691035-02bbb4d3-29f2-4190-b222-a988b20be13d.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/146691036-1e09b399-d01c-4291-8023-486b7b0d1f5f.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/146691038-0cc0bb1b-8726-4d46-96f3-b09d794fabcf.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/146691040-11c5ae78-d7ac-4977-8518-8c7b2b641bdf.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/146691013-60e913bc-0b1d-4116-99ab-ad32b49c66b1.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/146691015-8f3c897f-4ada-4999-aa98-f447ad297a24.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/146691018-96181234-f373-41db-8a26-a224b1ece8c4.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/146691020-8e0294be-1099-4d37-aa7f-448d84fe0264.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/146691021-02b9ca5c-87be-408e-9f3b-a20cd16be76b.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/146691022-ed55fb38-968c-497f-9d95-d6ff641c1278.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/146691024-8af21f1d-b167-4e5a-b204-6b0370c1d405.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/146691025-a2b35308-2ff7-4c54-85af-0c61152d13e2.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/146691026-4a354287-b913-4ad4-ac73-05c5ced3dd9d.png" width="150" height="300"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/146691027-db3d0cd8-9b99-47cc-997b-0364b104f9a1.png" width="150" height="300"></kbd>
 
 
 ## References
